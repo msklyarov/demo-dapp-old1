@@ -30,12 +30,8 @@ class ListingCreate extends Component {
     }
 
     this.schemaList = [
-      {type: 'for-sale', name: 'For Sale', 'img': 'for-sale.jpg'},
-      {type: 'housing', name: 'Housing', 'img': 'housing.jpg'},
-      {type: 'transportation', name: 'Transportation', 'img': 'transportation.jpg'},
-      {type: 'tickets', name: 'Tickets', 'img': 'tickets.jpg'},
-      {type: 'services', name: 'Services', 'img': 'services.jpg'},
-      {type: 'announcements', name: 'Announcements', 'img': 'announcements.jpg'},
+      {type: 'beauty-services', name: 'Beauty services', 'img': 'beauty-services.jpg'},
+      {type: 'cosmetics', name: 'Cosmetics', 'img': 'cosmetics.jpg'},
     ]
 
     this.state = {

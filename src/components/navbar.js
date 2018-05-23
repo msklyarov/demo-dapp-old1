@@ -27,7 +27,7 @@ class NavBar extends Component {
           </button>
           <Link to="/" className="navbar-brand mr-auto mr-lg-3">
             <div className="d-none d-lg-block logo-container">
-              <img src="images/origin-logo.svg" className="origin-logo" alt="Origin Protocol" />
+              <img src="images/jolyy-header-logo.svg" height="38" className="origin-logo" alt="Origin Protocol" />
             </div>
           </Link>
           <div className="collapse navbar-collapse order-2 order-lg-1" id="navbarSupportedContent">

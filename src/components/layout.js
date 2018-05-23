@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import Footer from './footer'
 import NavBar from './navbar'
 
 const Layout = ({ children }) => (
@@ -8,7 +7,6 @@ const Layout = ({ children }) => (
       <NavBar />
       {children}
     </main>
-    <Footer />
   </Fragment>
 )
 

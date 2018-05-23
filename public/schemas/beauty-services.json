@@ -1,0 +1,90 @@
+{
+  "$schema":"http://json-schema.org/draft-06/schema#",
+  "description": "Distributed by Jolyy",
+  "type": "object",
+  "required": ["name","category","description","price"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Title",
+      "minLength": 3,
+      "maxLength": 100
+    },
+    "category": {
+      "type": "string",
+      "title": "Category",
+      "enum": [
+        "Hair",
+        "Hair Removal",
+        "Nails",
+        "Massage",
+        "Face",
+        "Body",
+        "Spa Days & Breaks"
+      ],
+      "default":"Nails"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description",
+      "minLength": 10,
+      "maxLength": 1024
+    },
+    "location": {
+      "type": "string",
+      "title": "Location"
+    },
+    "weekDayFrom": {
+      "type": "string",
+      "title": "Day of the week, from",
+      "enum": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "default": "Monday"
+    },
+    "weekDayTo": {
+      "type": "string",
+      "title": "Day of the week, to",
+      "enum": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "default": "Friday"
+    },
+    "dayHourFrom": {
+      "type": "number",
+      "title": "Hour of the day, from",
+      "enum": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+      "default": 8
+    },
+    "dayHourTo": {
+      "type": "number",
+      "title": "Hour of the day, to",
+      "enum": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+      "default": 19
+    },
+    "price": {
+      "type": "number",
+      "title": "Price in ETH"
+    },
+    "pictures": {
+      "type": "array",
+      "title": "Select photos",
+      "items": {
+        "type": "string",
+        "format": "data-url"
+      }
+    }
+  }
+}

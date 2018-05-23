@@ -1,6 +1,6 @@
 {
   "$schema":"http://json-schema.org/draft-06/schema#",
-  "description": "Distributed Elance/99 Designs/Postmates/Fiver/Handy/Thumbtack",
+  "description": "Distributed by Jolyy",
   "type": "object",
   "required": ["name","category","description","price"],
   "properties": {
@@ -14,25 +14,21 @@
       "type": "string",
       "title": "Category",
       "enum": [
-        "Business Services",
-        "Counseling",
-        "Delivery Service",
-        "Dog Walking",
-        "Electrical ",
-        "Graphic Design",
-        "Handyman",
-        "Home Cleaning",
-        "Legal",
-        "Moving Help",
-        "Painting",
-        "Photography",
-        "Plumbing",
-        "Repair & Technical Support",
-        "Software Developement",
-        "Web Design",
-        "Writing, Translation & Transcription"
+        "Bath Preparations",
+        "Eye Makeup Preparations",
+        "Fragrance Preparations",
+        "Hair Preparations (non-coloring)",
+        "Hair Coloring Preparations",
+        "Makeup Preparations (not eye)",
+        "Manicuring Preparations",
+        "Personal Cleanliness",
+        "Men’s beauty products",
+        "Skin Care Preparations (Creams, Lotions, Powders, and Sprays)",
+        "Suntan Preparations",
+        "Oral Hygiene Products",
+        "Baby Products"
       ],
-      "default":"Home Cleaning"
+      "default":"Hair Coloring Preparations"
     },
     "description": {
       "type": "string",

@@ -5,3 +5,5 @@ build/
 
 # Build folders
 build_webpack/
+
+.idea/

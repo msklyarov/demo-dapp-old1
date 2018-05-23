@@ -4,11 +4,14 @@
   --dark: #111d28;
   --light: #c2cbd3;
   --clear-blue: #1a82ff;
-  --dark-grey-blue: #2e3f53;
+  /*--dark-grey-blue: #2e3f53;*/
+  --dark-grey-blue: #7071c4;
   --dark-clear-blue: #0169e6;
   --dark-grey: #282727;
-  --pale-grey: #ebf0f3;
-  --dusk: #455d75;
+  /*--pale-grey: #ebf0f3;*/
+  --pale-grey: #fff;
+  /*--dusk: #455d75;*/
+  --dusk: #7071c4;
   --greenblue: #26d198;
   --light-greenblue: #59ffcb;
   --bluish-purple: #6e3bea;
