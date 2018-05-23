@@ -241,6 +241,46 @@ class ListingsDetail extends Component {
                     </div>
                   </div>
                 }
+                {this.state.location &&
+                <div className="price d-flex justify-content-between">
+                  <div>Location</div>
+                  <div className="text-right">
+                    {this.state.location}
+                  </div>
+                </div>
+                }
+                {this.props.listingAddress && (
+                  <form>
+                    <div className="form-group">
+                      {this.state.weekDayFrom && <div className="price d-flex justify-content-between">
+                        <div>Booking date</div>
+                        <div className="text-right">
+                          <input
+                            id="bookingDate"
+                            type="date"
+                            className="form-control"
+                            style={{ height: '2em', width: '10em' }}
+                          />
+                        </div>
+                      </div>}
+                      {this.state.dayHourFrom && <div className="price d-flex justify-content-between">
+                        <div>Booking hour</div>
+                        <div className="text-right">
+                          <input
+                            id="bookingHour"
+                            type="number"
+                            className="form-control"
+                            style={{ height: '2em', width: '4em' }}
+                            min={this.state.dayHourFrom}
+                            max={this.state.dayHourTo}
+                            defaultValue={this.state.dayHourFrom}
+                          />
+                        </div>
+                      </div>}
+                    </div>
+                  </form>
+                )}
+
                 {/* Via Matt 4/5/2018: Hold off on allowing buyers to select quantity > 1 */}
                 {/* <div className="quantity d-flex justify-content-between">
                                   <div>Quantity</div>

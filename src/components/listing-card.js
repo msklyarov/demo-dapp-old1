@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 // temporary - we should be getting an origin instance from our app,
 // not using a global singleton
-import origin from '../services/origin'
+// import origin from '../services/origin'
 
 import ListingCardPrices from './listing-card-prices.js';
 
@@ -12,23 +12,25 @@ class ListingCard extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      loading: true,
+      // loading: true,
+      loading: false,
     }
   }
 
-  async componentDidMount() {
-    try {
-      const listing = await origin.listings.getByIndex(this.props.listingId)
-      const obj = Object.assign({}, listing, { loading: false })
-
-      this.setState(obj)
-    } catch (error) {
-      console.error(`Error fetching contract or IPFS info for listingId: ${this.props.listingId}`)
-    }
-  }
+  // async componentDidMount() {
+  //   try {
+  //     const listing = await origin.listings.getByIndex(this.props.listingId)
+  //     const obj = Object.assign({}, listing, { loading: false })
+  //
+  //     this.setState(obj)
+  //   } catch (error) {
+  //     console.error(`Error fetching contract or IPFS info for listingId: ${this.props.listingId}`)
+  //   }
+  // }
 
   render() {
-    const { address, category, loading, name, pictures, price, unitsAvailable } = this.state
+    const { loading } = this.state
+    const { address, category, location, name, pictures, price, unitsAvailable } = this.props.data
     const photo = pictures && pictures.length && (new URL(pictures[0])).protocol === "data:" && pictures[0]
 
     return (
@@ -43,6 +45,7 @@ class ListingCard extends Component {
             </div>
           }
           <div className="category placehold">{category}</div>
+          <p className="category placehold">Location: {location}</p>
           <h2 className="title placehold text-truncate">{name}</h2>
           {price >= 0 && <ListingCardPrices price={price} unitsAvailable={unitsAvailable} />}
         </Link>

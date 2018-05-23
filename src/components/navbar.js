@@ -6,6 +6,8 @@ import ConnectivityDropdown from 'components/dropdowns/connectivity'
 // import NotificationsDropdown from 'components/dropdowns/notifications'
 import UserDropdown from 'components/dropdowns/user'
 
+import NavBarFacetSwitch from './navbar-facet-switch'
+
 class NavBar extends Component {
   constructor(props) {
     super(props)
@@ -31,6 +33,7 @@ class NavBar extends Component {
             </div>
           </Link>
           <div className="collapse navbar-collapse order-2 order-lg-1" id="navbarSupportedContent">
+            {window.location.href.endsWith('/#/') && <NavBarFacetSwitch />}
             {/* Hidden for current deployment */}
             {/* <form className="form-inline my-2 my-lg-0">
               <input className="form-control mr-sm-2" type="search" placeholder="Search Listings" aria-label="Search" onChange={this.handleChange} value={this.state.searchQuery} />

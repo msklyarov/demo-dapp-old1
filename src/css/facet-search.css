@@ -1,0 +1,11 @@
+.hidden {
+  display: none;
+}
+
+.shop-items-100 {
+  width: 100%;
+}
+
+.shop-items-100-12em {
+  width: calc(100% - 12em);
+}
