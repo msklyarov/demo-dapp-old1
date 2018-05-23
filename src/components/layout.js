@@ -4,7 +4,7 @@ import FacetBlock from './facet-block'
 
 const Layout = ({ children }) => {
   // display footer
-  document.getElementById('jolly-footer').className = ''
+  document.getElementById('jolyy-footer').className = ''
 
   return (
     <Fragment>
