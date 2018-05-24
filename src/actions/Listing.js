@@ -41,7 +41,7 @@ export function getListingIds() {
         }
       }
 
-      const ids = await origin.listings.allIds()
+      const ids = (await origin.listings.allIds()).slice(0, 10)
       const showIds = ids ? ids.filter(i => hideList.indexOf(i) < 0) : []
 
       dispatch({
