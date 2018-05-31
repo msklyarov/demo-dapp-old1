@@ -25,7 +25,7 @@ class NavBar extends Component {
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container">
           <button className="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <img src="images/origin-icon-white.svg" alt="Origin menu" />
+            <img src="jolyy/jolyy-logo.svg" alt="JOLYY menu" />
           </button>
           <Link to="/" className="navbar-brand mr-auto mr-lg-3">
             <div className="d-none d-lg-block logo-container">
